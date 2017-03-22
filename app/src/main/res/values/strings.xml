@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RealPlayers</string>
+    <string name="position">Position</string>
+    <string name="jersey_number">Number</string>
+    <string name="contract_until">contract until</string>
+    <string name="refresh">refresh</string>
+    <string name="Contract_until">Constract until</string>
+    <string name="market_value">Market Value</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="invalid_jersey_number">Invalid jersey number</string>
+    <string name="invalid_date_number">Invalid date</string>
+</resources>

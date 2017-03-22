@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="4dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            tools:text="Player Name" />
+
+        <TextView
+            android:id="@+id/positionLabel"
+            style="@style/playerInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="5dp"
+            android:text="@string/position" />
+
+        <TextView
+            android:id="@+id/position"
+            style="@style/playerInfoValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/positionLabel"
+            android:layout_marginTop="5dp"
+            tools:text="Forward" />
+
+        <TextView
+            android:id="@+id/jerseyNumberLabel"
+            style="@style/playerInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/position"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/name"
+            android:text="@string/jersey_number" />
+
+        <TextView
+            android:id="@+id/jerseyNumber"
+            style="@style/playerInfoValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/jerseyNumberLabel"
+            tools:text="19" />
+
+        <TextView
+            android:id="@+id/marketValue"
+            style="@style/playerInfoValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/positionLabel"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            tools:text="120 000$" />
+
+        <TextView
+            android:id="@+id/contractUntilLabel"
+            style="@style/playerInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/marketValue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/positionLabel"
+            android:text="@string/contract_until" />
+
+        <TextView
+            android:id="@+id/contractUntil"
+            style="@style/playerInfoValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/positionLabel"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/contractUntilLabel"
+            tools:text="2017-02-05" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
