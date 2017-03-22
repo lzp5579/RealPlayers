@@ -10,4 +10,5 @@
     <string name="save">Save</string>
     <string name="invalid_jersey_number">Invalid jersey number</string>
     <string name="invalid_date_number">Invalid date</string>
+    <string name="error_during_request">There was error during request, try again later</string>
 </resources>

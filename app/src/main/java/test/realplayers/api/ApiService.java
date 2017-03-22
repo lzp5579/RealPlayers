@@ -66,8 +66,9 @@ public class ApiService extends Service {
                             sendResult(ACTION_PLAYERS, true);
                         }
                     }.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                } else {
+                    sendResult(ACTION_PLAYERS, false);
                 }
-                sendResult(ACTION_PLAYERS, false);
             }
             @Override
             public void onFailure(Call<ApiRequests.PlayersResponse> call, Throwable t) {

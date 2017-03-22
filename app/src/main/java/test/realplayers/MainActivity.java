@@ -20,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import test.realplayers.api.ApiService;
 import test.realplayers.db.DbContentProvider;
@@ -153,6 +154,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                             getSupportLoaderManager().restartLoader(0, args, MainActivity.this);
                         } else {
                             progress.setVisibility(View.GONE);
+                            Toast.makeText(MainActivity.this, R.string.error_during_request, Toast.LENGTH_SHORT).show();
                         }
                         break;
                 }
