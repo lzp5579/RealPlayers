@@ -119,10 +119,10 @@ public class DbOpenHelper extends SQLiteOpenHelper {
     }
 
     private static void bindString(SQLiteStatement statement, int index, String insertedObject) {
-        if (insertedObject == null) {
-            statement.bindNull(index);
-        } else {
-            statement.bindString(index, insertedObject);
-        }
+//        if (insertedObject == null) {
+//            statement.bindNull(index);
+//        } else {
+            statement.bindString(index, insertedObject != null ? insertedObject : "");
+//        }
     }
 }
